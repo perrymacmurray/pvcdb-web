@@ -12,10 +12,12 @@
 		<br><br><br>
 		<div style="text-align:center;width:50%;margin:auto;">
 			<img src="https://cdn.discordapp.com/attachments/347521303202496513/951964305782358046/pvcdb.png" style="width:60%;"><br><br>
-			<div class="grid" style="grid-template-columns: 5fr 1fr;">
-				<input type="text" id="query" autocomplete="off">
-			<button style="background-color:black;border-width:0;" aria-busy="false" id="query_go" onClick="doQuery()">Go</button>
-			</div>
+			<form onsubmit="doQuery(); return false;" style="margin:0;padding:0;">
+				<div class="grid" style="grid-template-columns: 5fr 1fr;">
+					<input type="text" id="query" autocomplete="off">
+					<input type="submit" style="background-color:black;border-width:0;" aria-busy="false" id="query_go" value="Go">
+				</div>
+			</form>
 		</div>
 		<br>
 		<div style="text-align:left;width:50%;margin:auto;">
